@@ -24,10 +24,10 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="/rss"
+            href="/safademirdag_en.pdf"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
+            <p className="ml-2 h-7">resume</p>
           </a>
         </li>
         <li>
@@ -35,7 +35,7 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/vercel/next.js"
+            href="https://github.com/2xafa"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">github</p>
@@ -54,7 +54,7 @@ export default function Footer() {
         </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
+        © safa demirdag {new Date().getFullYear()} 
       </p>
     </footer>
   )

@@ -1,21 +1,32 @@
 import { BlogPosts } from 'app/components/posts'
+import Image from 'next/image'
 
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+      <div>
+      <h1 
+        className="mb-8 text-2xl font-semibold tracking-tighter">
+          <Image
+        src="/safa.png"
+        width={200}
+        height={200}
+        alt="safa demirdağ"
+      />
+        safa demirdağ
+        
       </h1>
+        
+      </div>
+      
+      
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`I am a dedicated SysAdmin/DevOps professional with a passion for managing both cloud-based and on-premise infrastructures. My expertise lies in system administration, network management, and automation. I enjoy optimizing server performance, ensuring cybersecurity, and implementing efficient backup solutions. With a strong focus on problem-solving and continuous learning, I strive to deliver reliable and scalable IT solutions.`}
       </p>
       <div className="my-8">
         <BlogPosts />
       </div>
+      
     </section>
   )
 }

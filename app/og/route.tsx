@@ -6,6 +6,8 @@ export function GET(request: Request) {
 
   return new ImageResponse(
     (
+      <div className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#090808] from-71% via-[#28003b] via-90% to-[#3f015d] to-100%">
+</div>
       <div tw="flex flex-col w-full h-full items-center justify-center bg-white">
         <div tw="flex flex-col md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">
           <h2 tw="flex flex-col text-4xl font-bold tracking-tight text-left">
