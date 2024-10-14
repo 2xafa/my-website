@@ -44,4 +44,8 @@ pnpm dev
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+<<<<<<< HEAD
 >>>>>>> af1d03b (Initial commit from Create Next App)
+=======
+# sfddagdotcom
+>>>>>>> 8e7e819 (.)
