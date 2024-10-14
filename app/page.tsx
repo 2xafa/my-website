@@ -7,13 +7,16 @@ export default function Page() {
       <div>
       <h1 
         className="mb-8 text-2xl font-semibold tracking-tighter">
-          <Image
+          
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+        safa demirdağ 
+        <Image 
         src="/safa.png"
-        width={200}
-        height={200}
+        width={70}
+        height={70}
         alt="safa demirdağ"
-      />
-        safa demirdağ
+      /></div>  
+        
         
       </h1>
         

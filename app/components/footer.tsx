@@ -49,13 +49,11 @@ export default function Footer() {
             href="https://vercel.com/templates/next.js/portfolio-starter-kit"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">view source</p>
+            <p className="ml-2 h-7">linkedin</p>
           </a>
         </li>
       </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © safa demirdag {new Date().getFullYear()} 
-      </p>
+      
     </footer>
   )
 }
