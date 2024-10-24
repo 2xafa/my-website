@@ -26,7 +26,7 @@ export default function Page() {
 
       
       <p className="mb-4">
-        {`I am a dedicated SysAdmin/DevOps professional with a passion for managing both cloud-based and on-premise infrastructures. My expertise lies in system administration, network management, and automation. I enjoy optimizing server performance, ensuring cybersecurity, and implementing efficient backup solutions. With a strong focus on problem-solving and continuous learning, I strive to deliver reliable and scalable IT solutions.`}
+        {`I am a dedicated SysAdmin/DevOps professional with a passion for managing both cloud-based and on-premise infrastructures. My expertise is centered on system administration, network management, and automation. I enjoy optimizing server performance, ensuring cybersecurity, and implementing efficient backup solutions. With a strong focus on problem-solving and continuous learning, I strive to deliver reliable and scalable IT solutions.`}
       </p>
       <div className="my-8">
         <BlogPosts />
