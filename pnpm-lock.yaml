@@ -29,6 +29,9 @@ importers:
       geist:
         specifier: 1.2.2
         version: 1.2.2(next@14.2.0-canary.62(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+      i18n:
+        specifier: ^0.15.1
+        version: 0.15.1
       next:
         specifier: canary
         version: 14.2.0-canary.62(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -63,6 +66,21 @@ packages:
     resolution: {integrity: sha512-zQH//gdOmuu7nt2oJR29vFhDv88oGPmVw6BggmrHeMI+xgEkp1B2dX9/bMBSYtK0dyLX/aOmesKS09g222K1/g==}
     peerDependencies:
       react: '>=16'
+
+  '@messageformat/core@3.4.0':
+    resolution: {integrity: sha512-NgCFubFFIdMWJGN5WuQhHCNmzk7QgiVfrViFxcS99j7F5dDS5EP6raR54I+2ydhe4+5/XTn/YIEppFaqqVWHsw==}
+
+  '@messageformat/date-skeleton@1.1.0':
+    resolution: {integrity: sha512-rmGAfB1tIPER+gh3p/RgA+PVeRE/gxuQ2w4snFWPF5xtb5mbWR7Cbw7wCOftcUypbD6HVoxrVdyyghPm3WzP5A==}
+
+  '@messageformat/number-skeleton@1.2.0':
+    resolution: {integrity: sha512-xsgwcL7J7WhlHJ3RNbaVgssaIwcEyFkBqxHdcdaiJzwTZAWEOD8BuUFxnxV9k5S0qHN3v/KzUpq0IUpjH1seRg==}
+
+  '@messageformat/parser@5.1.0':
+    resolution: {integrity: sha512-jKlkls3Gewgw6qMjKZ9SFfHUpdzEVdovKFtW1qRhJ3WI4FW5R/NnGDqr8SDGz+krWDO3ki94boMmQvGke1HwUQ==}
+
+  '@messageformat/runtime@3.0.1':
+    resolution: {integrity: sha512-6RU5ol2lDtO8bD9Yxe6CZkl0DArdv0qkuoZC+ZwowU+cdRlVE1157wjCmlA5Rsf1Xc/brACnsZa5PZpEDfTFFg==}
 
   '@next/env@14.2.0-canary.62':
     resolution: {integrity: sha512-K5lmKK/TalagQELw3W0hKDXmNGGXY3Zxw3yH27y9DOT7evhiJvK2Ywq5uN4lEjYHkeW+QbyC/OjUIcK3RUSHbQ==}
@@ -293,6 +311,10 @@ packages:
   bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
 
+  boolean@3.2.0:
+    resolution: {integrity: sha512-d0II/GO9uf9lfUHH2BQsjxzRJZBdsjgsBiW4BvhWk/3qoKwQFjIDVN19PfX8F2D/r9PCMTtLWjYVCFrpeYUzsw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
   busboy@1.6.0:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
     engines: {node: '>=10.16.0'}
@@ -370,6 +392,10 @@ packages:
   extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
 
+  fast-printf@1.6.9:
+    resolution: {integrity: sha512-FChq8hbz65WMj4rstcQsFB0O7Cy++nmbNfLYnD9cYv2cRn8EG6k/MGn9kO/tjO66t09DLDugj3yL+V2o6Qftrg==}
+    engines: {node: '>=10.0'}
+
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
@@ -390,6 +416,10 @@ packages:
 
   hast-util-whitespace@2.0.1:
     resolution: {integrity: sha512-nAxA0v8+vXSBDt3AnRUNjyRIQ0rD+ntpbAp4LnPkumc5M9yUbSMa4XDU9Q6etY4f1Wp4bNgvc1yjiZtsTTrSng==}
+
+  i18n@0.15.1:
+    resolution: {integrity: sha512-yue187t8MqUPMHdKjiZGrX+L+xcUsDClGO0Cz4loaKUOK9WrGw5pgan4bv130utOwX7fHE9w2iUeHFalVQWkXA==}
+    engines: {node: '>=10'}
 
   inline-style-parser@0.1.1:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
@@ -496,8 +526,15 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
+  make-plural@7.4.0:
+    resolution: {integrity: sha512-4/gC9KVNTV6pvYg2gFeQYTW3mWaoJt7WZE5vrp1KnQDgW92JtYZnzmZT81oj/dUTqAIu0ufI2x3dkgu3bB1tYg==}
+
   markdown-extensions@1.1.1:
     resolution: {integrity: sha512-WWC0ZuMzCyDHYCasEGs4IPvLyTGftYwh6wIEOULOF0HXcqZlhwRzrK0w2VUlxWA98xnvb/jszw4ZSkJ6ADpM6Q==}
+    engines: {node: '>=0.10.0'}
+
+  math-interval-parser@2.0.1:
+    resolution: {integrity: sha512-VmlAmb0UJwlvMyx8iPhXUDnVW1F9IrGEd9CIOmv+XL8AErCUUuozoDMrgImvnYt2A+53qVX/tPW6YJurMKYsvA==}
     engines: {node: '>=0.10.0'}
 
   mdast-util-definitions@5.1.2:
@@ -614,12 +651,19 @@ packages:
   micromark@3.2.0:
     resolution: {integrity: sha512-uD66tJj54JLYq0De10AhWycZWGQNUvDI55xPgk2sQM5kn1JYlhbCMTtEeT27+vAhW2FBQxLlOmS3pmA7/2z4aA==}
 
+  moo@0.5.2:
+    resolution: {integrity: sha512-iSAJLHYKnX41mKcJKjqvnAN9sf0LMDTXDEvFv+ffuRR9a1MIuXLjMNL6EsnDHSkKLTWNqQQ5uo61P4EbU4NU+Q==}
+
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
 
   ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+
+  mustache@4.2.0:
+    resolution: {integrity: sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==}
+    hasBin: true
 
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
@@ -715,6 +759,9 @@ packages:
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
+
+  safe-identifier@0.4.2:
+    resolution: {integrity: sha512-6pNbSMW6OhAi9j+N8V+U715yBQsaWJ7eyEUaOrawX+isg5ZxhUlV1NipNtgaKHmFGiABwt+ZF04Ii+3Xjkg+8w==}
 
   scheduler@0.23.0:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
@@ -856,6 +903,27 @@ snapshots:
       '@types/mdx': 2.0.11
       '@types/react': 18.2.55
       react: 18.2.0
+
+  '@messageformat/core@3.4.0':
+    dependencies:
+      '@messageformat/date-skeleton': 1.1.0
+      '@messageformat/number-skeleton': 1.2.0
+      '@messageformat/parser': 5.1.0
+      '@messageformat/runtime': 3.0.1
+      make-plural: 7.4.0
+      safe-identifier: 0.4.2
+
+  '@messageformat/date-skeleton@1.1.0': {}
+
+  '@messageformat/number-skeleton@1.2.0': {}
+
+  '@messageformat/parser@5.1.0':
+    dependencies:
+      moo: 0.5.2
+
+  '@messageformat/runtime@3.0.1':
+    dependencies:
+      make-plural: 7.4.0
 
   '@next/env@14.2.0-canary.62': {}
 
@@ -1017,6 +1085,8 @@ snapshots:
 
   bail@2.0.2: {}
 
+  boolean@3.2.0: {}
+
   busboy@1.6.0:
     dependencies:
       streamsearch: 1.1.0
@@ -1082,6 +1152,10 @@ snapshots:
 
   extend@3.0.2: {}
 
+  fast-printf@1.6.9:
+    dependencies:
+      boolean: 3.2.0
+
   function-bind@1.1.2: {}
 
   geist@1.2.2(next@14.2.0-canary.62(react-dom@18.2.0(react@18.2.0))(react@18.2.0)):
@@ -1115,6 +1189,17 @@ snapshots:
       - supports-color
 
   hast-util-whitespace@2.0.1: {}
+
+  i18n@0.15.1:
+    dependencies:
+      '@messageformat/core': 3.4.0
+      debug: 4.3.4
+      fast-printf: 1.6.9
+      make-plural: 7.4.0
+      math-interval-parser: 2.0.1
+      mustache: 4.2.0
+    transitivePeerDependencies:
+      - supports-color
 
   inline-style-parser@0.1.1: {}
 
@@ -1196,7 +1281,11 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
+  make-plural@7.4.0: {}
+
   markdown-extensions@1.1.1: {}
+
+  math-interval-parser@2.0.1: {}
 
   mdast-util-definitions@5.1.2:
     dependencies:
@@ -1505,9 +1594,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  moo@0.5.2: {}
+
   mri@1.2.0: {}
 
   ms@2.1.2: {}
+
+  mustache@4.2.0: {}
 
   nanoid@3.3.7: {}
 
@@ -1638,6 +1731,8 @@ snapshots:
   sade@1.8.1:
     dependencies:
       mri: 1.2.0
+
+  safe-identifier@0.4.2: {}
 
   scheduler@0.23.0:
     dependencies:
